@@ -5,8 +5,7 @@
 REST API Testing & Automation using Postman
 
 ## 📖 Project Overview
-This project demonstrates REST API testing skills using **Postman**. It covers manual API testing, validations, environment variables, collections, and basic automation using JavaScript test scripts.  
-The project is designed to showcase **API testing knowledge for fresher QA / Data / Backend roles**.
+This project demonstrates REST API testing skills using **Postman**. It covers manual API testing, validations, environment variables, collections, and basic automation using JavaScript test scripts. 
 
 ## 🛠 Tools & Technologies
 - Postman
@@ -14,7 +13,6 @@ The project is designed to showcase **API testing knowledge for fresher QA / Dat
 - HTTP Methods (GET, POST, PUT, DELETE)
 - JSON
 - JavaScript (Postman Tests)
-- Newman (optional)
 
 ## 📂 APIs Used
 Public dummy API:
@@ -76,7 +74,7 @@ pm.test("Response time is less than 500ms", function () {
 2. Import the **Environment file**
 3. Select the environment
 4. Run the collection using **Collection Runner**
-5. (Optional) Run using Newman CLI
+
 
 ## 📈 Key Learnings
 - REST API fundamentals
@@ -85,7 +83,7 @@ pm.test("Response time is less than 500ms", function () {
 - Using environment & global variables
 - Automating API tests
 
-## 📌 Resume Description (Copy-Paste)
+
 **REST API Testing Project (Postman):**
 - Designed and executed API test cases using Postman for CRUD operations
 - Validated response status codes, headers, response time, and JSON data
