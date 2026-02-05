@@ -1,0 +1,146 @@
+# API Testing using Postman – Documentation
+
+## 1. Project Overview
+
+This project focuses on testing RESTful APIs using Postman to ensure correct functionality, data integrity, security, and performance. The APIs were tested using standard HTTP methods and validated using response status codes, headers, and body assertions.
+
+The objective of this project is to understand how real-world backend systems expose data through APIs and how clients securely interact with those APIs.
+
+---
+
+## 2. Objectives
+
+* To understand REST API concepts and HTTP methods
+* To validate API responses using Postman
+* To test authentication and authorization mechanisms
+* To ensure APIs return correct data, status codes, and headers
+* To create reusable and organized Postman collections
+
+---
+
+## 3. Technologies & Tools Used
+
+* Tool: Postman
+* API Style: RESTful APIs
+* Data Format: JSON
+* Authentication: Token-based authentication
+* HTTP Methods: GET, POST, PUT, DELETE
+
+---
+
+## 4. Data Source
+
+The data is provided by backend services exposed through REST APIs. These APIs fetch data from a server-side database, apply business logic, and return responses in JSON format.
+
+Note: The database is not accessed directly. All data interaction happens through API endpoints.
+
+---
+
+## 5. Authentication Mechanism
+
+The project uses **Token-Based Authentication**.
+
+### Authentication Flow:
+
+1. Client sends credentials to a login/authentication endpoint
+2. Server validates credentials
+3. Server generates an access token
+4. Client includes the token in the `Authorization` header for subsequent requests
+
+### Header Example:
+
+```
+Authorization: Bearer <access_token>
+```
+
+This approach is stateless, secure, and scalable, making it suitable for REST APIs.
+
+---
+
+## 6. API Methods Tested
+
+### 6.1 GET Method
+
+* Purpose: Retrieve data from the server
+* Example Use Case: Fetch user details or product information
+* Validation:
+
+  * Status code: 200 OK
+  * Response body structure
+  * Correct data types and values
+
+---
+
+### 6.2 POST Method
+
+* Purpose: Create new resources
+* Example Use Case: Create a new user or order
+* Validation:
+
+  * Status code: 201 Created
+  * Response body contains newly created resource
+
+---
+
+### 6.3 PUT Method
+
+* Purpose: Update existing resources
+* Example Use Case: Update user or product details
+* Validation:
+
+  * Status code: 200 OK
+  * Updated fields reflected in response
+
+---
+
+### 6.4 DELETE Method
+
+* Purpose: Delete existing resources
+* Example Use Case: Remove a user or record
+* Validation:
+
+  * Status code: 200 OK or 204 No Content
+
+---
+
+## 7. Validations Performed
+
+* HTTP status code validation
+* Response body validation
+* Header validation (Content-Type, Authorization)
+* Token authentication validation
+* Error handling validation (401, 403, 404)
+
+---
+
+## 8. Postman Collection Structure
+
+* Organized requests into collections
+* Used environments for variables (base URL, token)
+* Created reusable authorization headers
+* Improved maintainability and reusability
+
+---
+
+## 9. Error Scenarios Tested
+
+* Invalid token
+* Missing authentication token
+* Invalid request payload
+* Unauthorized access
+
+---
+
+## 10. Learning Outcomes
+
+* Strong understanding of REST API concepts
+* Hands-on experience with Postman
+* Practical knowledge of token-based authentication
+* Improved debugging and API validation skills
+* Better understanding of client-server communication
+
+---
+
+## 11. Conclusion
+
+This project provided practical exposure to testing real-world REST APIs. It strengthened my understanding of how backend systems expose data securely and how APIs are validated before being consumed by applications. The project helped me build a strong foundation in API testing and RESTful architecture.
